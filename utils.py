@@ -64,7 +64,7 @@ def plot_gaussian(gaussian, condition_axis=None, condition_value=None, condition
         
     elif condition_axis == 1:
         fig = plt.figure(constrained_layout=True, figsize=(10, 9))
-        gs = fig.add_gridspec(3)
+        gs = fig.add_gridspec(3, 1)
         ax0 = fig.add_subplot(gs[0:2])
         ax1 = fig.add_subplot(gs[2])
         plot_twodim(ax0, gaussian)
